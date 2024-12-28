@@ -17,7 +17,13 @@ for (let i = 0; i < boxes.length; i++) {
     const box = boxes[i];
 
     // Mouseover and mouseout for visual effect
-    
+    box.addEventListener("mouseover", function() {
+        box.style.backgroundColor = "rgb(43, 43, 43)";
+    });
+
+    box.addEventListener("mouseout", function() {
+        box.style.backgroundColor = "black";
+    });
 
     // Handle click event
     box.addEventListener("click", function() {
